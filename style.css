@@ -1,0 +1,203 @@
+/* Added a border box to all elemnts for a responsive layout */
+
+* {
+  box-sizing: border-box;
+}
+
+/* ==CSS styling for Mobile View */
+
+/* Established Montserrat as the base font within the body; 
+  changed background color to the white hue used in colour palette and used charcoal grey in the palette for the text font */
+body {
+  background-color: #f7f7ff;
+  font-family: "Montserrat", sans-serif;
+  color: #333131;
+}
+
+/* Added padding in order to get web elements in the main section to indent */
+section {
+  padding: 40px;
+}
+
+/* Established dimensions for the logo for mobile, tablet, and desktop */
+.logo {
+  width: 118px;
+  height: 90px;
+}
+
+/* Established font sizes for h1 and h2 for mobile view */
+h1 {
+  font-size: 4.5em;
+}
+
+h2 {
+  font-weight: initial;
+}
+
+/* Created the container for the contact form and styled for mobile; 
+  rounded the border, added box shadow and padding for text elements */
+.container {
+  width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 3px 3px 10px #ccc;
+}
+
+/* Added margin spacing in-between contact form elements */
+.contact-form-section + .contact-form-section {
+  margin-top: 7px;
+}
+
+/* Applied a highlight to link "Check your Application status */
+.contact-form a {
+  color: red;
+}
+
+/*  Styled contact form input elements to include a grey background, rounded border, and spacing */
+.contact-form-input {
+  width: 100%;
+  background-color: #e6e6e6;
+  border: 0;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+/* Styled the button to have the same border radius as the input elements; 
+  applied a green hue from the palette and increased font weight and text transform for legibility */
+/* Added a margin-top and padding to create more space between button and checkbox; set button width for mobile view */
+.contact-form button {
+  background-color: #57eeab;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Establishing background color, width, and padding for Footer element; 
+  building a form for number of hours logged and styling social media icons  */
+
+footer {
+  background-color: #fffd8c;
+  width: 100%;
+  padding: 30px 50px;
+}
+
+.calculator-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.city-input,
+.hours-input {
+  background-color: white;
+  border-radius: 6px;
+  border: 0;
+  padding: 9px;
+  width: auto;
+}
+
+.hours-input {
+  width: 70px;
+  margin-right: 10px;
+}
+
+.city-input {
+  flex-grow: 1;
+}
+
+.calculator-form div {
+  display: flex;
+}
+
+/* Styling the button with the appropriate size and shape, colour, text styles, and spacing */
+
+.button {
+  margin-top: 15px;
+  background-color: #ff8480;
+  border: none;
+  color: #f7f7ff;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+/*  Used flexbox for the social media icons section in order to display in even-spaced row  */
+
+.social-section {
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-evenly;
+}
+
+/* Tablet View */
+/* Following media query to change the sizing of the contact form; 
+  display change for the hours log as a row */
+/* Centered social media icons and added 20px margin for space */
+
+@media (min-width: 768px) {
+  .container {
+    width: 500px;
+  }
+
+  .calculator-form {
+    flex-direction: row;
+  }
+
+  .social-section {
+    justify-content: center;
+  }
+
+  .social-section img {
+    margin: 20px;
+  }
+
+  .button {
+    margin-top: 0;
+    margin-left: 15px;
+  }
+}
+
+/* Desktop View */
+/* Following media query will change the layout of the sign up section to a row; 
+  social media icons repositioned to appear on the bottom right corner of page */
+
+@media (min-width: 1280px) {
+  /* Set up flex box display for elements .sign-up class to appear as a row;
+      implemented the scooter image as part of the background to create an overlap */
+  /* Elements in .sign-up spaced out so the appear on either side of the home page. */
+  .sign-up {
+    display: flex;
+    background-size: 65%;
+    background-repeat: no-repeat;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(images/bg-image/scooter.svg);
+    background-position-x: 50%;
+    background-position-y: center;
+  }
+
+  /* Changed .bg-image to 'display none' in order to get element to appear in the background for an overlapping effect */
+  .bg-image {
+    display: none;
+  }
+
+  .container,
+  .headings {
+    width: 400px;
+    margin: 0;
+  }
+
+  /* Adjusted footer elements to space between for desktop layout; changed padding rules to eliminate empty space at the foot of the page */
+  footer {
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    padding: 70px 30px 70px 30px;
+  }
+}
