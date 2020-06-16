@@ -145,6 +145,16 @@ footer {
     width: 500px;
   }
 
+  .bg-image {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .apply-now {
+    font-size: 2em;
+  }
+
   .calculator-form {
     flex-direction: row;
   }
@@ -173,7 +183,7 @@ footer {
   /* Elements in .sign-up spaced out so the appear on either side of the home page. */
   .sign-up {
     display: flex;
-    background-size: 65%;
+    background-size: 50%;
     background-repeat: no-repeat;
     flex-direction: row;
     justify-content: space-between;
@@ -193,11 +203,15 @@ footer {
     margin: 0;
   }
 
+  h1 .apply-now {
+    margin-top: 3px;
+  }
+
   /* Adjusted footer elements to space between for desktop layout; changed padding rules to eliminate empty space at the foot of the page */
   footer {
     display: flex;
     justify-content: space-between;
     bottom: 0;
-    padding: 70px 30px 70px 30px;
+    padding: 50px 30px 50px 30px;
   }
 }
