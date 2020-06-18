@@ -1,1 +1,122 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>McNaughton Landing Page MTM6201</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- Created a main that includes the logo, headings, and contact form elements for web page  -->
+  <body>
+    <main>
+      <section>
+        <img
+          class="logo"
+          src="logo.png"
+          alt="Dash logo"
+          width="480"
+          height="400"
+        />
+        <!-- Created a Sign-up div class for ease of CSS styling -->
+        <!-- Implemented the contact form, heading tags, and image to be used for the home page -->
+        <div class="sign-up">
+          <div class="headings">
+            <h1>Want to be your own boss?</h1>
+            <h2>
+              Start today and make up to $30/hr driving your own vehicle with
+              Dash!
+            </h2>
+          </div>
+          <img
+            class="bg-image"
+            src="images/bg-image/scooter.svg"
+            alt="Woman on Scooter"
+          />
+          <div class="container">
+            <form class="contact-form">
+              <div class="contact-form-section">
+                <h1 class="apply-now">Apply Now</h1>
+                <p>Enter your info below.</p>
+                <label class="contact-form-label"></label>
+                <input
+                  class="contact-form-input"
+                  type="text"
+                  placeholder="First name"
+                />
+              </div>
+              <div class="contact-form-section">
+                <label class="contact-form-label"></label>
+                <input
+                  class="contact-form-input"
+                  type="text"
+                  placeholder="Last name"
+                />
+              </div>
+              <div class="contact-form-section">
+                <label class="contact-form-label"></label>
+                <input
+                  class="contact-form-input"
+                  type="text"
+                  placeholder="Phone number"
+                />
+              </div>
+              <div class="contact-form-section">
+                <label class="contact-form-label"></label>
+                <input
+                  class="contact-form-input"
+                  type="email"
+                  placeholder="Email address"
+                />
+              </div>
+              <div class="contact-form-section">
+                <input type="checkbox" id="terms" name="terms" value="terms" />
+                <label for="terms">I agree to Dash terms</label>
+              </div>
+              <button type="submit">Drive with us</button>
+              <p>Already applied? <a>Check your application status here</a></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer will contain a calculator form and social media icons -->
+    <footer>
+      <div class="info-section">
+        <h3>See how much you can earn with Dash.</h3>
+        <p>how many hours do you want to drive with us this week?</p>
+        <form class="calculator-form">
+          <div>
+            <input type="text" class="hours-input" placeholder="Hours" />
+            <input type="text" class="city-input" placeholder="City" />
+          </div>
+          <button type="button" class="button">Calculate</button>
+        </form>
+      </div>
+      <!-- Created a div class for social media sections for use of layout changes in CSS -->
+      <div class="social-section">
+        <img
+          class="icon-facebook"
+          src="images/icons/facebook.svg"
+          alt="Facebook icon"
+        />
+        <img
+          class="icon-instagram"
+          src="images/icons/instagram.svg"
+          alt="Instagram icon"
+        />
+        <img
+          class="icon-twitter"
+          src="images/icons/twitter.svg"
+          alt="Twitter icon"
+        />
+        <img
+          class="icon-linkedin"
+          src="images/icons/linkedin.svg"
+          alt="LinkedIn icon"
+        />
+      </div>
+    </footer>
+  </body>
+</html>
