@@ -168,6 +168,7 @@ and adding line height and font-size specifications for ease of reading in mobil
     font-size: 1.8rem;
     text-align: center;
 }
+
 .about-image {
     max-width: 100%;
     height: auto;
@@ -188,6 +189,7 @@ p {
 .wrapper p:last-child {
     margin-bottom: 1.1rem;
 }
+
 /* Centering map for mobile view */
 .map-section {
     display: flex;
@@ -226,7 +228,7 @@ iframe {
     max-width: 100%;
     height: auto;
 }
-/* Added transparency and styled h3 titles for menu types when in a hover state */
+/* Styling h3 titles to appear in the center for menu type sections */
 .menu-item h3 {
     position: absolute;
     top: 50%;
@@ -235,11 +237,19 @@ iframe {
     color: transparent;
     font-size: 40px;
 }
-
+/* Added transparency and text shadow for h3 titles for legibility and included jump animation when in hover to assist in navigation */
 .menu-item:hover {
     opacity: 0.8;
     text-shadow: 0 0 34px white;
     color: black;
+    animation-name: jump;
+    animation-duration: 0.8s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+}
+
+@keyframes jump {
+    50%{ transform: translate(0, -10px); }
 }
 
 .menu-item:hover h3 {
@@ -333,22 +343,27 @@ footer p {
         flex-direction: row;
         align-items: flex-start;
     }
+
     .about-image {
         width: 50%;
         order: 2;
         padding: 20px;
     }
+
     .wrapper {
         order: 1;
     }
+
     .location {
         display: flex;
         flex-direction: row;
     }
+
     iframe {
         height: 450px;
         width: 600px;
     }
+
     .address-section {
         display: flex;
         flex-direction: column;
