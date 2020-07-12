@@ -1,6 +1,5 @@
 /* ==CSS Styling */
 /* MOBILE VIEW */
-
 /* Implementing logo dimensions for mobile */
 
 .header-elements {
@@ -130,7 +129,7 @@ body {
     top: 0;
 }
 
-/* Styling for the bullets/indicators */
+/* Styling for the bullets/indicators for image carousel */
 
 .dot-container {
     text-align: center;
@@ -189,7 +188,7 @@ p {
 .wrapper p:last-child {
     margin-bottom: 1.1rem;
 }
-
+/* Centering map for mobile view */
 .map-section {
     display: flex;
     flex-direction: row;
@@ -212,7 +211,6 @@ iframe {
 }
 
 /* LAYOUT FOR MENU PAGE */
-
 /* Styling menu items to stack in mobile view */
 .image-row {
     display: flex;
@@ -228,7 +226,7 @@ iframe {
     max-width: 100%;
     height: auto;
 }
-
+/* Added transparency and styled h3 titles for menu types when in a hover state */
 .menu-item h3 {
     position: absolute;
     top: 50%;
@@ -287,7 +285,6 @@ footer p {
 }
 
 /* NAVIGATION DISPLAY */
-
 /* Used flexbox to display nav elements in a row and eliminated border */
 @media(min-width: 768px) {
     .navigation ul {
@@ -318,10 +315,9 @@ footer p {
 }
 
 /* DESKTOP VIEW */
-
 /* HOME PAGE */
-
 /* Increased width of slideshow for Desktop view */
+
 @media(min-width: 1280px) {
     .slideshow-container {
         max-width: 1000px;
@@ -329,7 +325,6 @@ footer p {
 }
     
 /* ABOUT PAGE */
-
 /* changed layout for map and address/hours information */
 
 @media(min-width: 1280px) {
@@ -350,12 +345,10 @@ footer p {
         display: flex;
         flex-direction: row;
     }
-
     iframe {
         height: 450px;
         width: 600px;
     }
-
     .address-section {
         display: flex;
         flex-direction: column;
@@ -364,12 +357,12 @@ footer p {
 }
 
 /* MENU PAGE */
-
 /* used Flexbox to change layout display of menu */
 @media(min-width: 1280px) {
     .image-row {
         display: flex;
         flex-direction: row;
+        align-self: center;
     }
 
     .menu-item {
@@ -380,7 +373,6 @@ footer p {
 }
 
 /* FOOTER */
-
 /* Restyling footer for desktop using flexbox */
 @media(min-width: 1280px) {
     .footer-elements {
