@@ -121,17 +121,30 @@
     </div>
     <br>
 
-    <!-- Carousel component example (with controls) -->
-    <div id="carouselExampleIndicators" class="carousel slide bg-dark" data-ride="carousel">
-        <div class="container">
-            <h2 class="display-4 text-center text-white">Carousel</h2>
-            <p class="text-white">A carousel is a slideshow component that allows users to cycle through a series of
-                content. Built using a combination of CSS 3D transforms and JavaScript, the carousel with a series of
-                images or text and comes with indicators and previous/next controls for ease of cycling.</p>
-            <p class="text-white">To ensure that the carousel is visible, the .active class needs to be attributed to
-                one of the slides. In addition, an id '#' needs to be set within the .carousel class in order additional
-                slide controls for buttons and indicators.</p>
+    <!-- Carousel Component -->
+    <div class="container-fluid bg-dark pt-3 pb-2">
+        <div class="row">
+            <div class="col-10 offset-1">
+                <h2 class="display-4 text-center text-white">Carousel</h2>
+                <p class="text-white">A carousel is a slideshow component that allows users to cycle through a series of
+                    content. Built using a combination of CSS 3D transforms and JavaScript, the carousel with a series
+                    of images or text and comes with indicators and previous/next controls for ease of cycling.</p>
+                <p class="text-white">To ensure that the carousel is visible, the .active class needs to be attributed
+                    to one of the slides. In addition, an id '#' needs to be set within the .carousel class in order
+                    additional slide controls for buttons and indicators.</p>
+            </div>
         </div>
+        <!-- <h2 class="display-4 text-center text-white">Carousel</h2>
+        <p class="text-white">A carousel is a slideshow component that allows users to cycle through a series of
+            content. Built using a combination of CSS 3D transforms and JavaScript, the carousel with a series of
+            images or text and comes with indicators and previous/next controls for ease of cycling.</p>
+        <p class="text-white">To ensure that the carousel is visible, the .active class needs to be attributed to
+            one of the slides. In addition, an id '#' needs to be set within the .carousel class in order additional
+            slide controls for buttons and indicators.</p> -->
+    </div>
+
+    <!-- Carousel component example (with controls) -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -169,9 +182,9 @@
     <!-- Implementing grid system layout and its offsets to demonstrate Bootstrap's flexbox grid capabilities -->
     <div class="container mt-4">
         <h2 class="display-4 text-center">Bootstrap Grid Layouts</h2>
-        <p>Another fun and key feature Bootstrap utilizes is its grid system! Using a combination of flexbox and CSS
-            grid modules, Bootstrap's Grid layout is built on a twelve column system with 5 break points, making it the
-            ideal choice for creating mobile-first and responsive websites.</p>
+        <p>Using a combination of flexbox and CSS grid modules, Bootstrap's Grid layout is built on a twelve column
+            system with 5 break points, making it the ideal choice for creating mobile-first and responsive websites.
+        </p>
         <p>The Bootstrap Grid layout has three main components - containers, rows, and columns. Containers can be of a
             fixed width that snaps at certain breakpoints, or fluid - taking up 100% of the viewport width. Rows prepare
             web content for a layout, while columns store the content and are laid out with Bootstrap's 12-column
