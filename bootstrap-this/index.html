@@ -36,21 +36,46 @@
     </nav>
 
     <!-- Implementing Bootstrap Jumbotron component -->
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid bg-info">
         <div class="container">
-            <h1 class="display-3">Welcome to Bootstrap!</h1>
-            <p class="lead">This is a jumbotron component, which is used as a call to action to bring the user's
-                attention to featured content or products.</p>
+            <h1 class="display-3 text-white">Welcome to Bootstrap!</h1>
+            <p class="lead text-white">This is a jumbotron component, which is used as a call to action to bring the
+                user's attention to featured content or products.</p>
             <hr>
-            <p>Responsive and lightweight, the jumbotron can extend to the full width of the viewport for
-                showcasing key messages to site visitors.</p>
-            <a class="btn btn-info btn-lg" href="#" role="button">Find Out More</a>
+            <p class="text-white">Responsive and lightweight, the jumbotron can extend to the full width of the viewport
+                for showcasing key messages to site visitors.</p>
+            <a class="btn btn-dark btn-lg" href="#" role="button">Find Out More</a>
         </div>
     </div>
 
+
+    <!-- Implementing Spinner component -->
+    <div class="container d-block text-center">
+        <h2 class="display-4 text-center">Spinners</h2>
+        <p>A Bootstrap "spinner" component can be utilized to show the loading state for a web project. They are built
+            using HTML and CSS only, meaning that require no JavaScript to create.</p>
+        <p>Border spinners use the currentColor as its default border-color, but can be changed using text color
+            utilities. You can customize your spinner's appearance however you want using Bootstrap's text color
+            utilities library! Here are some examples below:</p>
+        <div class="spinner-border text-danger" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-border text-warning" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-border text-success" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <br>
+    <hr>
+
     <!-- Implementing Bootstrap Card components -->
     <div class="container">
-        <h2 class="display-4 text-center">Bootstrap Card</h2>
+        <h2 class="display-4 text-center mt-5">Bootstrap Cards</h2>
         <p>A card is a flexible content container that can include contextual information such as a heading, a thumbnail
             image, and icons or buttons. Cards can be created in Bootstrap using very little markup or styling, but can
             provide all kinds of customization options. Cards are built with the Flexbox layout model, which allows for
@@ -94,6 +119,7 @@
             </div>
         </div>
     </div>
+    <br>
 
     <!-- Carousel component example (with controls) -->
     <div id="carouselExampleIndicators" class="carousel slide bg-dark" data-ride="carousel">
@@ -143,45 +169,65 @@
     <!-- Implementing grid system layout and its offsets to demonstrate Bootstrap's flexbox grid capabilities -->
     <div class="container mt-4">
         <h2 class="display-4 text-center">Bootstrap Grid Layouts</h2>
-        <h3 class="display-5 text-center">Grid Demo #1</h3>
         <p>Another fun and key feature Bootstrap utilizes is its grid system! Using a combination of flexbox and CSS
             grid modules, Bootstrap's Grid layout is built on a twelve column system with 5 break points, making it the
             ideal choice for creating mobile-first and responsive websites.</p>
-        <p>The Bootstrap Grid layout has three main components - containers, rows, and columns.</p>
+        <p>The Bootstrap Grid layout has three main components - containers, rows, and columns. Containers can be of a
+            fixed width that snaps at certain breakpoints, or fluid - taking up 100% of the viewport width. Rows prepare
+            web content for a layout, while columns store the content and are laid out with Bootstrap's 12-column
+            system.</p>
+        <p>To prepare the Grid layout, add a a div with a class of .container followed by another div with a class of
+            .row. Finally, create and nest the div .col class to create your columns. By default, the columns will be
+            displayed with equal widths. However, columns can be customized using the .col-{number} class to set how
+            many columns you would like an element to stretch.</p>
+
+        <h3 class="display-5 text-center">Grid Demo #1</h3>
         <div class="row">
-            <div class="col-12 bg-secondary text-white">One</div>
-            <div class="col-6 bg-info text-white">Two</div>
-            <div class="col-6 bg-dark text-white">Three</div>
-            <div class="col-4 bg-primary text-white">Four</div>
-            <div class="col-4 bg-danger text-white">Five</div>
+            <div class="col-12 bg-secondary text-white text-center pt-2 pb-2">The following content is dummy text to
+                show you how your content will appear when using Bootstrap Grid.</div>
+            <div class="col-6 bg-info text-white text-center pt-4">You'll notice that some of the columns will stretch
+                depending on how much text you put in, or the dimensions of the images you wish to use.</div>
+            <div class="col-6 bg-dark text-white text-center pt-2 pb-2">This can be especially useful if you want to set
+                up Pinterest-style masonic tiling for your web content if you're looking to change up your layouts - not
+                everything has to stay in an equally-spaced grid!</div>
+            <div class="col-4 bg-primary text-white text-center pt-2 pb-2">As long as you remember that this system uses
+                12 columns total, it should be fairly simple to determine how many columns you'd like your element to
+                span.</div>
+            <div class="col-8 bg-danger text-white text-center pt-5">I'm supposed to think of another cat-pun, aren't I?
+                You'll seriously be having kittens discovering how powerful this tool can be.</div>
         </div>
     </div>
     <br>
+
     <!-- Bootstrap grid w/ offsets -->
     <div class="container">
+        <h2 class="display-4 text-center">Offsets</h2>
+        <p>Want a bit more space for your web content and don't like the Grid format? Use offsets! An offset is used to
+            push columns over to create more space between elements.
+            You can offset grid columns in 2 ways - using the .offset-* (or .offset-{number})
+            grid class or margin utilities. In this example, we'll show you how to use the .offset- class.</p>
+        <p>You can move columns to the right by employing the .offset-* class. This class will increase the left margin
+            of a column by whatever number of columns you assign. Examaple: an .offset-2 will move a .col two columns to
+            the right.</p>
         <h3 class="display-5 text-center">Grid Demo #2 - Offsets</h3>
-        <p>T</p>
         <div class="row mb-4">
-            <div class="col-4 offset-1 bg-secondary text-white text-center">1</div>
-            <div class="col-4 offset-4 bg-dark text-white text-center">2</div>
-            <div class="col-4 offset-7 bg-primary text-white text-center">3</div>
-            <div class="col-4 offset-4 bg-warning text-center">4</div>
-            <div class="col-4 offset-2 bg-info text-white text-center">5</div>
-            <div class="col-4 bg-danger text-white text-center">6</div>
-            <div class="col-4 offset-4 bg-dark text-white text-center">7</div>
+            <div class="col-4 offset-1 bg-secondary text-white text-center">I want</div>
+            <div class="col-4 offset-4 bg-dark text-white text-center">chicken</div>
+            <div class="col-4 offset-7 bg-primary text-white text-center">I want</div>
+            <div class="col-4 offset-4 bg-warning text-center">liver</div>
+            <div class="col-4 offset-2 bg-info text-white text-center">Meow mix</div>
+            <div class="col-4 bg-danger text-white text-center">Meow mix</div>
+            <div class="col-4 offset-4 bg-dark text-white text-center">Please deliver</div>
         </div>
+        <p>When using offsets, be mindful of how many columns your .col classes are. You
+            only have 12 columns total to play with so calculate the number of columns remaining to figure how much
+            your content should move.</p>
     </div>
-
 
     <footer class="page-footer bg-warning pt-4">
         <div class="container-fluid d-flex justify-content-space-between">
             <div class="row">
-                <div class="col-md-6 mt-md-0 mt-3">
-                    <h5 class="text-uppercase font-weight-bold">Footer Content</h5>
-                    <p>Some dummy text to illustrate how you can lay out your footer elements within
-                        this container.</p>
-                </div>
-                <div class="col-md-6 mt-md-0 mt-3 mb-4">
+                <div class="col-md-6 mt-md-0 mt-3 mb-2">
                     <h5 class="text-uppercase font-weight-bold">Social Media</h5>
                     <p>Please like/follow us on the following channels for more information.</p>
                     <!-- Social Media Icons -->
@@ -193,6 +239,10 @@
                     <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
                     <!-- GitHub -->
                     <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                </div>
+                <div class="col-md-6 mt-md-0 mt-3 mb-3">
+                    <h5 class="text-uppercase font-weight-bold">Copyright Line</h5>
+                    <p>Copyright &copy McNaughton 2020</p>
                 </div>
             </div>
         </div>
