@@ -1,5 +1,5 @@
 /* ==CSS STYLING */
-
+/* Establishing custom fonts to be used throughout the site */
 body {
     font-family: 'Merriweather', serif;
 }
@@ -11,6 +11,7 @@ p {
     font-family: 'Raleway', sans-serif;
 }
 
+/* Establishing custom colour for all headings, and weight for h3 elements */
 h1,
 h2 {
     color: #03256C;
@@ -21,7 +22,8 @@ h3 {
 }
 
 /* =NAVIGATION */
-
+/* Implemented override to utilize custom nav colour within design mockup */
+/* Styling .navbar-brand title and nav-links with custom fonts */
 .navbar.navbar-expand-sm.bg-dark.navbar-dark {
     background-color: #FF715B !important;
 }
@@ -36,20 +38,22 @@ h3 {
     font-size: 	1.25rem;
 }
 
+/* Included hover state transition and active nav link colour for ease of navigation */
 .nav-link:hover {
     transform: scale(1.3);
     transition: transform 0.3s ease-in-out;
 }
 
-/* .nav-link:active {
-    color: #fff689;
-} */
+.nav-link.active {
+    color: #fff689 !important;
+}
 
 .navbar-brand,
 .nav-link {
     text-transform: uppercase;
 }
 
+/* For positioning nav bar elements */
 @media (min-width: 768px) {
     .navbar-expand-sm.navbar-nav.nav-link {
         padding-right: .7rem;
@@ -57,17 +61,24 @@ h3 {
     }
 }
 
-
 /* HOME PAGE */
 
+/* I integrated a background image for my contact page in order to fill some of the white space without making the overall layout look busy */
+/* Background image will appear at the Tablet breakpoint (768px) */
 .homepage {
     background-image: url('./img/images/home/nautical-designs-illustrations-2.png');
     background-size: cover;
     max-width: 100%;
     height: auto;
 }
- 
-.jumbotron {
+
+@media (max-width: 768px) {
+    .homepage {
+        background-image: none;
+    }
+}
+
+ .jumbotron {
     padding: 4rem 2rem;
     background-color: white;
     margin: 5rem;
@@ -75,14 +86,10 @@ h3 {
 }
 
 /* ABOUT */
-
+/* Added margin to div elements for better spacing between sections */
 .about>div {
     margin: 0.9375rem;
 }
-
-/* .mission-section p:nth-child(1) {
-    font-style: italic;
-} */
 
 .btn.btn-outline-secondary {
     font-family: 'Raleway', sans-serif;
@@ -91,13 +98,17 @@ h3 {
     margin-bottom: 1.25rem;
 }
 
-
 /* PORTFOLIO */
 
-/* Added some space between images elements within the column containers to */
+/* Added some space between images elements within the column containers to match the space between column classes */
+/* Implemented jump animation to facilitate navigation for the user */
+
+.portfolio .container {
+    margin-top: 1.25rem;
+}
 
 .masonry-container img {
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .masonry-container img:hover {
@@ -111,16 +122,7 @@ h3 {
     50%{ transform: translate(0, -10px); }
 }
 
-/* SERVICES */
-
-
-
-
 /* CONTACT */
-
-/* .contact {
-    background-image: none;
-} */
 
 /* I integrated a background image for my contact page in order to fill some of the white space without making the overall layout look busy */
 /* Background image will appear at the Tablet breakpoint (768px) */
@@ -133,6 +135,14 @@ h3 {
     height: auto;
 }
 
+/* Eliminated background picture on mobile in order to keep ui elements contained */
+/* Styled using opacity to have contact form appear see-through */
+@media (max-width: 768px) {
+    .contact {
+        background-image: none;
+    }
+}
+
 .input-fields {
     opacity: 0.9;
 }
@@ -140,11 +150,6 @@ h3 {
 /* Added an offset rule in order to position my contact form to the right as it appears in my design mockup */
 .row.offset-3 {
     margin: 0 !important;
-}
-
-.display-4.text-center-sm,
-.display-5.text-center-sm {
-    color: #FF715B;    
 }
 
 /* Implemented custom colours for the button and hover state for ease of user navigation */
@@ -165,6 +170,7 @@ h3 {
 /* =FOOTER */
 
 /* Changed Bootstrap background colour to a custom canary yellow to keep with colour palette in mockup */
+/* Added padding to social media icons and added custom navy from colour palette */
 .bg-warning {
     background-color: #fff689 !important;
 }
@@ -179,3 +185,7 @@ h3 {
     color: #03256C;
 }
 
+/* Added flexbox display to have social media elements appear on the other end of the footer */
+.d-flex.align-end {
+    justify-content: flex-end;
+}
