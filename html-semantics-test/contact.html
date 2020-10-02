@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reggie's Coffee Shop</title>
+    <title>Reggie's Coffee Shop - Home</title>
 </head>
 
 <body>
@@ -18,7 +18,54 @@
             </ul>
         </nav>
     </header>
-    <main></main>
+
+    <!-- Page Content -->
+    <main>
+        <h2>Contact Us</h2>
+        <table border>
+            <caption>Hours of Operation</caption>
+            <thead>
+                <tr>
+                    <th>Days</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mon-Fri</td>
+                    <td>10am - 6pm</td>
+                </tr>
+                <tr>
+                    <td>Sat</td>
+                    <td>11am - 4pm</td>
+                </tr>
+                <tr>
+                    <td>Sun</td>
+                    <td>CLOSED</td>
+            </tbody>
+        </table>
+        <!-- Adding a contact form -->
+        <section>
+            <h3>We'd love to hear from you!</h3>
+            <form action="thanks">
+                <div>
+                    <label for="fullname">Your Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Jane Doe">
+                </div>
+                <div>
+                    <label for="youremail">Email</label>
+                    <input type="email" id="youremail" name="youremail">
+                </div>
+                <button type="submit">Sign me up</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Site Footer -->
+    <footer>
+        &copy; Reggie's Coffee Shop 2020.
+    </footer>
+
 </body>
 
 </html>
