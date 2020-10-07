@@ -1,0 +1,21 @@
+body {
+    color: darkslategrey;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(49, 34, 11);
+}
+
+nav {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+h1 {
+    color: white;
+}
