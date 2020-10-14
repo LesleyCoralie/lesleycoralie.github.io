@@ -1,6 +1,7 @@
 body {
     color: darkslategrey;
     font-family: Helvetica, Arial, sans-serif;
+    background-image: url(./images/white_brick_wall.png);
 }
 
 header {
@@ -17,5 +18,58 @@ nav ul {
 }
 
 h1 {
+    color: white;
+}
+
+.orange-link {
+    color: orangered;
+}
+
+.large-text {
+    font-size: 1.25rem;
+}
+
+/* Attribute selector */
+
+[href="#tow"] {
+    font-weight: bold;
+}
+
+[target="_blank"] {
+    text-transform: uppercase;
+}
+
+/* Using Pseudo Classes
+Styling Navigation */
+
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    background: orange;
+    /* horizontal, vertical, blur, spread */
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+/* collapse table border into one */
+table {
+    border-collapse: collapse;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #d5836c;
+}
+
+/* Where n is 0, 1, 2... until the number of elements  */
+table th:nth-child(n),
+table td:nth-child(n) {
+    border: 1px solid #000;
+}
+
+table td:nth-child(2n+1) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: darkblue;
     color: white;
 }
