@@ -15,6 +15,12 @@ body {
     color: darkslategrey;
     font-family: 'Montserrat', sans-serif;
     background-image: url(./images/white_brick_wall.png);
+    padding-top: 90px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 header {
@@ -23,10 +29,45 @@ header {
 
 nav {
     text-decoration: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
 }
 
 nav ul {
     list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 49%;
+    padding: 1em;
+    box-sizing: border-box;
+    border-right: 1px solid white;
+}
+
+nav ul li:last-child {
+    border: none;
+}
+
+nav ul a {
+    display: block;
+}
+
+
+/* Using Pseudo Classes
+Styling Navigation */
+
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    background: orange;
+    /* horizontal, vertical, blur, spread */
+    box-shadow: -2px 2px 4px 2px black;
+    font-size: 1.5rem;
 }
 
 h1 {
@@ -34,10 +75,41 @@ h1 {
 }
 
 .orange-link {
+    padding: 1.5em;
+    display: block;
     background-color: darkslategrey;
     color: orange;
     text-decoration: none;
 }
+
+/* Creating a two-column layout using css float */
+article aside {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid black;
+    padding: 1.5em;
+    width: 80%;
+    box-sizing: border-box;
+    float: left;
+}
+
+aside {
+    width: 20%;
+}
+
+section {
+    clear: both;
+}
+
+
+img {
+    width: 100%;
+}
+
+/* Stop container at max width on page
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+} */
 
 .large-text {
     font-size: 1.25rem;
@@ -55,26 +127,23 @@ h1 {
     background-color: darkslategrey;
 }
 
-/* Using Pseudo Classes
-Styling Navigation */
-
-nav ul a,
-nav ul a:link,
-nav ul a:visited {
-    background: orange;
-    /* horizontal, vertical, blur, spread */
-    box-shadow: -2px 2px 4px 2px black;
-    font-size: 1.5rem;
+/* Position Absolute */
+.orange-link .large-text {
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 
 /* Selecting HTML element with id value */
 #tow {
+    position: relative;
     background: orange url(./images/bread.jpg) no-repeat center center;
     background-size: cover;
     /* Adding styles to make the text legible */
     color: white;
     font-size: 1.5rem;
-    padding: 1em;
+    padding: 1em, 1em, 3em, 1em;
+    width: 50vw;
 }
 
 /* collapse table border into one */
@@ -106,10 +175,8 @@ section p {
     background-color: rgb(144, 175, 233);
 }
 
-
-
-
 footer {
     background-color: darkblue;
     color: white;
+    padding: 1.25em;
 }
