@@ -1,4 +1,4 @@
-/* CUSTOM STYLES */
+/* =========CUSTOM STYLES========== */
 
 html {
     font-family: Helvetica, Arial, sans-serif;
@@ -79,9 +79,9 @@ p {
     padding: 1em;
 }
 
-/* MOBILE VIEW */
+/* ========MOBILE VIEW========= */
 
-/* header */
+/* ---------------header--------------- */
 
 .mobile-logo {
     max-width: 150px;
@@ -105,7 +105,29 @@ p {
 
 }
 
-/* Mobile app section */
+/* -----------Navigation------------ */
+
+.nav-list li {
+    border-bottom: 1px solid grey;
+    text-align: center;
+}
+
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+}
+
+.nav-link a:hover,
+.nav-link a:focus,
+.nav-link a.current {
+    background-color: #00add8;
+    color: inherit;
+}
+
+/* ---------------Mobile app section------------------*/
 
 .btn {
     text-decoration: none;
@@ -121,7 +143,21 @@ p {
     color: inherit;
 }
 
-/* Footer Styles */
+/* ------------Actions Section-------------- */
+
+.actions-list {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.actions-list li {
+    max-width: 50%;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* ------------Footer Styles------------- */
 .site-footer {
     border-top: 2px solid #00add8;
     margin-top: 20px;
@@ -132,13 +168,14 @@ p {
     text-align: right;
 }
 
-/* DESKTOP VIEW */
+/* =========DESKTOP VIEW========= */
 
 @media screen and (min-width: 600px) {
     html {
         font-size: 16px;
     }
 
+    /* ------------Header------------ */
     .mobile-logo {
         display: none;
     }
@@ -156,7 +193,23 @@ p {
         color: white;
     }
 
-    /* App section */
+    /* -----------Navigation------------ */
+
+    .nav-list {
+        display: flex;
+    }
+
+    .nav-list li {
+        flex: 1;
+        border: none;
+        border-right: 1px solid grey;
+    }
+
+    .nav-list li:last-child {
+        border: none;
+    }
+
+    /* ----------App section--------- */
     .app img {
         width: 40%;
         float: left;
@@ -165,5 +218,15 @@ p {
 
     .app .btn {
         float: right;
+    }
+
+}
+
+/* ======= DESKTOP STYLES - 800px ======= */
+@media screen and (min-width: 800px) {
+
+    /* ------ Actions Section------- */
+    .actions-list li {
+        max-width: 20%;
     }
 }
