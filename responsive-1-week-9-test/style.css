@@ -81,7 +81,7 @@ p {
 
 /* ========MOBILE VIEW========= */
 
-/* ---------------header--------------- */
+/* --------------HEADER-------------- */
 
 .mobile-logo {
     max-width: 150px;
@@ -105,7 +105,7 @@ p {
 
 }
 
-/* -----------Navigation------------ */
+/* -----------NAVIGATION------------ */
 
 .nav-list li {
     border-bottom: 1px solid grey;
@@ -127,7 +127,9 @@ p {
     color: inherit;
 }
 
-/* ---------------Mobile app section------------------*/
+/* ============= HOME PAGE =================== */
+
+/* ---------------MOBILE APP SECTION------------------*/
 
 .btn {
     text-decoration: none;
@@ -143,7 +145,7 @@ p {
     color: inherit;
 }
 
-/* ------------Actions Section-------------- */
+/* ------------ACTIONS SECTION-------------- */
 
 .actions-list {
     display: flex;
@@ -157,7 +159,7 @@ p {
     font-size: 1.5rem;
 }
 
-/* ------------Footer Styles------------- */
+/* ------------FOOTER STYLES------------- */
 .site-footer {
     border-top: 2px solid #00add8;
     margin-top: 20px;
@@ -168,6 +170,35 @@ p {
     text-align: right;
 }
 
+
+/* =============== CLIMATE ACTION PAGE ================= */
+
+/* -------CARD SECTION-------*/
+.card {
+    border: 1px solid #00aad8;
+    margin-bottom: 1em;
+    border-radius: 4px;
+}
+
+.card .info {
+    padding: 1em;
+}
+
+.card .info h3 {
+    margin-top: 0;
+}
+
+/* -------NEWS SECTION------- */
+
+.news {
+    margin-top: 3em;
+    border-top: 2px solid #00aad8;
+}
+
+
+
+
+
 /* =========DESKTOP VIEW========= */
 
 @media screen and (min-width: 600px) {
@@ -175,7 +206,7 @@ p {
         font-size: 16px;
     }
 
-    /* ------------Header------------ */
+    /* ------------HEADER------------ */
     .mobile-logo {
         display: none;
     }
@@ -193,7 +224,7 @@ p {
         color: white;
     }
 
-    /* -----------Navigation------------ */
+    /* -----------NAVIGATION------------ */
 
     .nav-list {
         display: flex;
@@ -209,7 +240,7 @@ p {
         border: none;
     }
 
-    /* ----------App section--------- */
+    /* ----------MOBILE APP SECTION--------- */
     .app img {
         width: 40%;
         float: left;
@@ -225,8 +256,52 @@ p {
 /* ======= DESKTOP STYLES - 800px ======= */
 @media screen and (min-width: 800px) {
 
-    /* ------ Actions Section------- */
+    /* ------ ACTIONS SECTION------- */
     .actions-list li {
         max-width: 20%;
+    }
+
+    /* ======== CLIMATE ACTION ========= */
+    /* ------ CARD SECTION ------ */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1em;
+    }
+
+    /* ------ NEWS SECTION ------ */
+    .news {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        grid-gap: 1em;
+        grid-template-areas:
+            "head head"
+            "left right1"
+            "left right2"
+        ;
+    }
+
+    .news h2 {
+        grid-area: head;
+    }
+
+    .news .left {
+        grid-area: left;
+    }
+
+    .news .right {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1em;
+    }
+
+    .news .right img {
+        grid-row: 1 / 3;
+    }
+
+    .news .right h3 {
+        font-size: 1.5em;
+        margin-top: 0;
     }
 }
