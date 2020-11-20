@@ -163,7 +163,7 @@ p {
 .site-footer {
     border-top: 2px solid #00add8;
     margin-top: 20px;
-    padding: 20px 0;
+    padding: 20px 20px;
 }
 
 .site-footer .copy {
