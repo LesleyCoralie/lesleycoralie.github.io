@@ -1,0 +1,366 @@
+/* ======================
+       MOBILE STYLES     
+   ====================== */
+
+html {
+    font-size: 14px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+img {
+    width: 100%;
+}
+
+a,
+a:link,
+a:visited {
+    color: #ffe6ac;
+}
+
+a:hover,
+a:focus {
+    color: white;
+}
+
+
+/* Styling all headings */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    /* top, left/right, bottom */
+    margin: 1em 0 0.5em;
+}
+
+/* Modular Scale Sizing */
+h1 {
+    font-size: 5.063rem;
+}
+
+h2 {
+    font-size: 3.375rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+p {
+    margin: 1em 0;
+}
+
+
+/* -------- SITE HEADER AND COMPANY BANNER/CURRENT PAGE -------- */
+
+.logo {
+    max-width: 150px;
+}
+
+/* Styling background color for current nav list items */
+.current {
+    background-color: #c78c06;
+    padding: 0.5em;
+}
+
+.current a {
+    color: black;
+}
+
+/* -------- NAVIGATION -------- */
+.navigation {
+    background-color: #222;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-list a {
+    text-align: center;
+}
+
+.nav-list li:nth-child(2),
+.logo {
+    background-color: #c78c06;
+}
+
+.nav-list a,
+.nav-list a:link,
+.nav-list a:visited {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+}
+
+.nav-link a:hover,
+.nav-link a:focus,
+.nav-link a.current {
+    background-color: #c78c06;
+
+}
+
+.search-container {
+    padding: 1em;
+}
+
+.search-container form {
+    display: flex;
+}
+
+form input[type=text] {
+    width: 100%;
+    padding: 1em;
+}
+
+/* Nav search bar and button styles */
+
+.search-btn {
+    padding: 1em;
+}
+
+/* .im-magnifier {
+    vertical-align: middle;
+} */
+
+/* ======== HOME PAGE ======== */
+
+/* Establishing inline layout for all content containers */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+/* General Button Styles */
+.btn {
+    height: 200px;
+    width: 300px;
+    background-color: black;
+    color: whitesmoke;
+    padding: 1.4em;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* ------ SITE BANNER AND CALL TO ACTION SECTION ------ */
+.site-banner {
+    background: url("/images-2/main-banner.jpg") no-repeat center center;
+    background-size: cover;
+    padding: 1em 3em;
+}
+
+/* Applying styles Call to Action for opacity bleed, text legibility, and button */
+
+.call-to-action {
+    position: relative;
+    background-color: black;
+    color: white;
+    opacity: 0.75;
+    padding: 1em;
+}
+
+/* Styling Call to Action Button */
+
+
+/* ----- ABOUT SECTION ----- */
+
+.about-us {
+    background-color: #ffe6ac;
+    padding: 1em;
+}
+
+/* .about-banner {
+    display: block;
+    width: 100%;
+} */
+
+/* ---- Our Vision ----- */
+
+.our-vision {
+    background: url("/images-2/vision.jpg") no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
+/* ------ TEAM SECTION ------ */
+
+.ceo-info,
+.cfo-info {
+    background-color: #ffe6ac;
+    padding: 1em;
+}
+
+/* ----- SERVICES SECTION ----- */
+
+.digital-img,
+.marketing-img,
+.video-img,
+.web-img,
+.print-img {
+    margin: 0;
+}
+
+.digital-transformation,
+.marketing,
+.video,
+.web-design,
+.print {
+    background-color: #ffe6ac;
+    padding-top: 1.2em;
+    padding-left: 1em;
+    margin-bottom: 1.5em;
+
+}
+
+/* ----- CONTACT SECTION ------ */
+
+form {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Styling inputs and textareas */
+
+.contact-form input[type=text],
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+/* --- Location --- */
+
+/* Styling Location */
+
+.location {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Resizing Google Map for Mobile View */
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+
+/* ----- SITE FOOTER ----- */
+
+.site-footer {
+    background-color: #222;
+    color: #c78c06;
+    padding: 2em;
+
+}
+
+
+
+/* ======================
+       DESKTOP STYLES    
+   ====================== */
+@media screen and (min-width: 760px) {
+
+    /* ------ NAVIGATION ------ */
+    /* .nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    } */
+
+    /* ------ ABOUT SECTION ------ */
+
+
+    /* ----- SERVICES SECTION ------ */
+
+    .service-types {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 1fr 1fr;
+    }
+
+    /* ----- OUR TEAM ----- */
+    /* Establishing Grid Layout display for the Team Section */
+    .our-team {
+        display: grid;
+        max-width: 1200px;
+        margin: 0 auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "header header"
+            "pic1 content1"
+            "content2 pic2"
+        ;
+    }
+
+    /* Designating class elements according to grid area layout */
+    .heading {
+        grid-area: header;
+    }
+
+    .ceo-picture {
+        grid-area: pic1;
+    }
+
+    .ceo-info {
+        grid-area: content1;
+    }
+
+    .cfo-picture {
+        grid-area: pic2;
+    }
+
+    .cfo-info {
+        grid-area: content2;
+    }
+
+    /* ----- CONTACT ----- */
+
+}
